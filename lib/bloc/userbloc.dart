@@ -2,7 +2,9 @@ import 'package:bloc/bloc.dart';
 import 'package:design_pattern/model/user.dart';
 
 class UserBloc extends Bloc<int, User>{
-  UserBloc(User initialState) : super(initialState);
+  UserBloc(User UninitializedUser) : super(UninitializedUser);
+
+  @override
   User get initialState => UninitializedUser();
 
   @override
